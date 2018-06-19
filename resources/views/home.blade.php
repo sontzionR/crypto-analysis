@@ -16,7 +16,9 @@
 
                     You are logged in!
                 </div>
+
             </div>
+            {!! $chart->render()!!}
         </div>
     </div>
 </div>

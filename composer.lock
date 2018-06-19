@@ -4,8 +4,156 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "d5bca48e56bbf3a25645858fcab9c285",
+    "content-hash": "2b01083a29259e04ad3c762a027e7db8",
     "packages": [
+        {
+            "name": "antoineaugusti/laravel-sentiment-analysis",
+            "version": "v2.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/AntoineAugusti/laravel-sentiment-analysis.git",
+                "reference": "a1c614a477093efe78ef8da9389bd53a61a52b44"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/AntoineAugusti/laravel-sentiment-analysis/zipball/a1c614a477093efe78ef8da9389bd53a61a52b44",
+                "reference": "a1c614a477093efe78ef8da9389bd53a61a52b44",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/support": "~5.0",
+                "jwhennessey/phpinsight": "~2.0",
+                "php": ">=5.4.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~4.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Antoineaugusti\\LaravelSentimentAnalysis\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Apache-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "Antoine Augusti",
+                    "email": "antoine.augusti@gmail.com"
+                }
+            ],
+            "description": "A Laravel wrapper that performs sentiment analysis over an English sentence",
+            "keywords": [
+                "Antoine Augusti",
+                "AntoineAugusti",
+                "Augusti",
+                "analysis",
+                "framework",
+                "laravel",
+                "sentiment",
+                "sentiment analysis"
+            ],
+            "time": "2017-06-06T12:59:15+00:00"
+        },
+        {
+            "name": "consoletvs/charts",
+            "version": "5.4.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/ConsoleTVs/Charts.git",
+                "reference": "353039ae19488c0ddd33213f5506548ef8b77558"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ConsoleTVs/Charts/zipball/353039ae19488c0ddd33213f5506548ef8b77558",
+                "reference": "353039ae19488c0ddd33213f5506548ef8b77558",
+                "shasum": ""
+            },
+            "require": {
+                "consoletvs/support": "^2.1.2",
+                "illuminate/support": "5.*",
+                "jenssegers/date": "v3.*",
+                "jlawrence/eos": "3.*",
+                "php": ">=7.0.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "ConsoleTVs\\Charts\\ChartsServiceProvider"
+                    ],
+                    "aliases": {
+                        "Charts": "ConsoleTVs\\Charts\\Facades\\Charts"
+                    }
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "ConsoleTVs\\Charts\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Erik Campobadal",
+                    "email": "soc@erik.cat"
+                }
+            ],
+            "description": "Create charts for laravel using different charts libraries",
+            "time": "2017-09-28T14:44:56+00:00"
+        },
+        {
+            "name": "consoletvs/support",
+            "version": "2.5",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/ConsoleTVs/Support.git",
+                "reference": "c7502eb323069bc7da1ad37e28d9c281ade8f1f0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ConsoleTVs/Support/zipball/c7502eb323069bc7da1ad37e28d9c281ade8f1f0",
+                "reference": "c7502eb323069bc7da1ad37e28d9c281ade8f1f0",
+                "shasum": ""
+            },
+            "require": {
+                "ext-bcmath": "*",
+                "illuminate/support": "5.*",
+                "intervention/image": "^2.4",
+                "php": ">=7.0",
+                "umpirsky/language-list": "^1.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "ConsoleTVs\\Support\\SupportServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "ConsoleTVs\\Support\\": "."
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Erik Campobadal",
+                    "email": "soc@erik.cat"
+                }
+            ],
+            "description": "ConsoleTVs support library",
+            "time": "2017-12-15T07:30:36+00:00"
+        },
         {
             "name": "dnoegel/php-xdg-base-dir",
             "version": "0.1",
@@ -162,16 +310,16 @@
         },
         {
             "name": "dragonmantank/cron-expression",
-            "version": "v2.1.0",
+            "version": "v2.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/dragonmantank/cron-expression.git",
-                "reference": "3f00985deec8df53d4cc1e5c33619bda1ee309a5"
+                "reference": "92a2c3768d50e21a1f26a53cb795ce72806266c5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/dragonmantank/cron-expression/zipball/3f00985deec8df53d4cc1e5c33619bda1ee309a5",
-                "reference": "3f00985deec8df53d4cc1e5c33619bda1ee309a5",
+                "url": "https://api.github.com/repos/dragonmantank/cron-expression/zipball/92a2c3768d50e21a1f26a53cb795ce72806266c5",
+                "reference": "92a2c3768d50e21a1f26a53cb795ce72806266c5",
                 "shasum": ""
             },
             "require": {
@@ -207,7 +355,7 @@
                 "cron",
                 "schedule"
             ],
-            "time": "2018-04-06T15:51:55+00:00"
+            "time": "2018-06-06T03:12:17+00:00"
         },
         {
             "name": "egulias/email-validator",
@@ -367,6 +515,191 @@
             "time": "2018-02-07T20:20:57+00:00"
         },
         {
+            "name": "guzzlehttp/psr7",
+            "version": "1.4.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/guzzle/psr7.git",
+                "reference": "f5b8a8512e2b58b0071a7280e39f14f72e05d87c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/guzzle/psr7/zipball/f5b8a8512e2b58b0071a7280e39f14f72e05d87c",
+                "reference": "f5b8a8512e2b58b0071a7280e39f14f72e05d87c",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.4.0",
+                "psr/http-message": "~1.0"
+            },
+            "provide": {
+                "psr/http-message-implementation": "1.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~4.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.4-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "GuzzleHttp\\Psr7\\": "src/"
+                },
+                "files": [
+                    "src/functions_include.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Michael Dowling",
+                    "email": "mtdowling@gmail.com",
+                    "homepage": "https://github.com/mtdowling"
+                },
+                {
+                    "name": "Tobias Schultze",
+                    "homepage": "https://github.com/Tobion"
+                }
+            ],
+            "description": "PSR-7 message implementation that also provides common utility methods",
+            "keywords": [
+                "http",
+                "message",
+                "request",
+                "response",
+                "stream",
+                "uri",
+                "url"
+            ],
+            "time": "2017-03-20T17:10:46+00:00"
+        },
+        {
+            "name": "intervention/image",
+            "version": "2.4.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Intervention/image.git",
+                "reference": "e82d274f786e3d4b866a59b173f42e716f0783eb"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Intervention/image/zipball/e82d274f786e3d4b866a59b173f42e716f0783eb",
+                "reference": "e82d274f786e3d4b866a59b173f42e716f0783eb",
+                "shasum": ""
+            },
+            "require": {
+                "ext-fileinfo": "*",
+                "guzzlehttp/psr7": "~1.1",
+                "php": ">=5.4.0"
+            },
+            "require-dev": {
+                "mockery/mockery": "~0.9.2",
+                "phpunit/phpunit": "^4.8 || ^5.7"
+            },
+            "suggest": {
+                "ext-gd": "to use GD library based image processing.",
+                "ext-imagick": "to use Imagick based image processing.",
+                "intervention/imagecache": "Caching extension for the Intervention Image library"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.4-dev"
+                },
+                "laravel": {
+                    "providers": [
+                        "Intervention\\Image\\ImageServiceProvider"
+                    ],
+                    "aliases": {
+                        "Image": "Intervention\\Image\\Facades\\Image"
+                    }
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Intervention\\Image\\": "src/Intervention/Image"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Oliver Vogel",
+                    "email": "oliver@olivervogel.com",
+                    "homepage": "http://olivervogel.com/"
+                }
+            ],
+            "description": "Image handling and manipulation library with support for Laravel integration",
+            "homepage": "http://image.intervention.io/",
+            "keywords": [
+                "gd",
+                "image",
+                "imagick",
+                "laravel",
+                "thumbnail",
+                "watermark"
+            ],
+            "time": "2018-05-29T14:19:03+00:00"
+        },
+        {
+            "name": "j7mbo/twitter-api-php",
+            "version": "1.0.6",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/J7mbo/twitter-api-php.git",
+                "reference": "443d22c53d621b3cc6b7e0c56daa60c5ada033f7"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/J7mbo/twitter-api-php/zipball/443d22c53d621b3cc6b7e0c56daa60c5ada033f7",
+                "reference": "443d22c53d621b3cc6b7e0c56daa60c5ada033f7",
+                "shasum": ""
+            },
+            "require": {
+                "ext-curl": "*"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~4.5,>=4.5.1"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0-dev"
+                }
+            },
+            "autoload": {
+                "classmap": [
+                    "TwitterAPIExchange.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GNU Public License"
+            ],
+            "authors": [
+                {
+                    "name": "James Mallison",
+                    "homepage": "https://github.com/j7mbo/twitter-api-php"
+                }
+            ],
+            "description": "Simple PHP Wrapper for Twitter API v1.1 calls",
+            "homepage": "https://github.com/j7mbo/twitter-api-php",
+            "keywords": [
+                "api",
+                "php",
+                "twitter"
+            ],
+            "time": "2017-05-08T12:10:56+00:00"
+        },
+        {
             "name": "jakub-onderka/php-console-color",
             "version": "0.1",
             "source": {
@@ -454,17 +787,167 @@
             "time": "2015-04-20T18:58:01+00:00"
         },
         {
-            "name": "laravel/framework",
-            "version": "v5.6.24",
+            "name": "jenssegers/date",
+            "version": "v3.4.0",
             "source": {
                 "type": "git",
-                "url": "https://github.com/laravel/framework.git",
-                "reference": "56290edeb0d8051826d40b4cbd8ed3c30348b2b5"
+                "url": "https://github.com/jenssegers/date.git",
+                "reference": "3f5f94f28bd5108fab011869434209101d4189ae"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/framework/zipball/56290edeb0d8051826d40b4cbd8ed3c30348b2b5",
-                "reference": "56290edeb0d8051826d40b4cbd8ed3c30348b2b5",
+                "url": "https://api.github.com/repos/jenssegers/date/zipball/3f5f94f28bd5108fab011869434209101d4189ae",
+                "reference": "3f5f94f28bd5108fab011869434209101d4189ae",
+                "shasum": ""
+            },
+            "require": {
+                "nesbot/carbon": "^1.0",
+                "php": ">=5.6",
+                "symfony/translation": "^2.7|^3.0|^4.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^5.0|^6.0|^7.0",
+                "satooshi/php-coveralls": "^2.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "3.1-dev"
+                },
+                "laravel": {
+                    "providers": [
+                        "Jenssegers\\Date\\DateServiceProvider"
+                    ],
+                    "aliases": {
+                        "Date": "Jenssegers\\Date\\Date"
+                    }
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Jenssegers\\Date\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Jens Segers",
+                    "homepage": "https://jenssegers.com"
+                }
+            ],
+            "description": "A date library to help you work with dates in different languages",
+            "homepage": "https://github.com/jenssegers/date",
+            "keywords": [
+                "carbon",
+                "date",
+                "datetime",
+                "i18n",
+                "laravel",
+                "time",
+                "translation"
+            ],
+            "time": "2018-05-16T11:53:55+00:00"
+        },
+        {
+            "name": "jlawrence/eos",
+            "version": "v3.2.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/jlawrence11/eos.git",
+                "reference": "25e3d0f2316cb4636000f452a8e7dcc83725a32a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/jlawrence11/eos/zipball/25e3d0f2316cb4636000f452a8e7dcc83725a32a",
+                "reference": "25e3d0f2316cb4636000f452a8e7dcc83725a32a",
+                "shasum": ""
+            },
+            "require-dev": {
+                "codeclimate/php-test-reporter": "dev-master",
+                "phpunit/phpunit": "4.*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "jlawrence\\eos\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "LGPL-2.1+"
+            ],
+            "authors": [
+                {
+                    "name": "Jon Lawrence",
+                    "email": "jon@jon-lawrence.com"
+                }
+            ],
+            "description": "Parse and solve math equations without using 'eval()'.",
+            "keywords": [
+                "eos",
+                "equations",
+                "math",
+                "solve"
+            ],
+            "time": "2016-03-02T22:35:41+00:00"
+        },
+        {
+            "name": "jwhennessey/phpinsight",
+            "version": "v2.0.9",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/JWHennessey/phpInsight.git",
+                "reference": "b89e7a7f418ebd88ae330b889be4dd1d47d4ceaa"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/JWHennessey/phpInsight/zipball/b89e7a7f418ebd88ae330b889be4dd1d47d4ceaa",
+                "reference": "b89e7a7f418ebd88ae330b889be4dd1d47d4ceaa",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "PHPInsight": "lib/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPLv3 or later"
+            ],
+            "authors": [
+                {
+                    "name": "James Hennessey"
+                }
+            ],
+            "description": "Sentiment analysis tool for PHP",
+            "homepage": "https://github.com/JWHennessey/phpInsight",
+            "keywords": [
+                "insight",
+                "phpinsight",
+                "sentiment"
+            ],
+            "abandoned": true,
+            "time": "2015-06-20T03:38:20+00:00"
+        },
+        {
+            "name": "laravel/framework",
+            "version": "v5.6.25",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/laravel/framework.git",
+                "reference": "a15efe4fbcd6b38ea76edc5c8939ffde4f4c7b7f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/laravel/framework/zipball/a15efe4fbcd6b38ea76edc5c8939ffde4f4c7b7f",
+                "reference": "a15efe4fbcd6b38ea76edc5c8939ffde4f4c7b7f",
                 "shasum": ""
             },
             "require": {
@@ -590,7 +1073,7 @@
                 "framework",
                 "laravel"
             ],
-            "time": "2018-06-04T14:51:03+00:00"
+            "time": "2018-06-12T14:39:24+00:00"
         },
         {
             "name": "laravel/tinker",
@@ -923,16 +1406,16 @@
         },
         {
             "name": "paragonie/random_compat",
-            "version": "v2.0.12",
+            "version": "v2.0.15",
             "source": {
                 "type": "git",
                 "url": "https://github.com/paragonie/random_compat.git",
-                "reference": "258c89a6b97de7dfaf5b8c7607d0478e236b04fb"
+                "reference": "10bcb46e8f3d365170f6de9d05245aa066b81f09"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/paragonie/random_compat/zipball/258c89a6b97de7dfaf5b8c7607d0478e236b04fb",
-                "reference": "258c89a6b97de7dfaf5b8c7607d0478e236b04fb",
+                "url": "https://api.github.com/repos/paragonie/random_compat/zipball/10bcb46e8f3d365170f6de9d05245aa066b81f09",
+                "reference": "10bcb46e8f3d365170f6de9d05245aa066b81f09",
                 "shasum": ""
             },
             "require": {
@@ -964,10 +1447,11 @@
             "description": "PHP 5.x polyfill for random_bytes() and random_int() from PHP 7",
             "keywords": [
                 "csprng",
+                "polyfill",
                 "pseudorandom",
                 "random"
             ],
-            "time": "2018-04-04T21:24:14+00:00"
+            "time": "2018-06-08T15:26:40+00:00"
         },
         {
             "name": "psr/container",
@@ -1017,6 +1501,56 @@
                 "psr"
             ],
             "time": "2017-02-14T16:28:37+00:00"
+        },
+        {
+            "name": "psr/http-message",
+            "version": "1.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/php-fig/http-message.git",
+                "reference": "f6561bf28d520154e4b0ec72be95418abe6d9363"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/php-fig/http-message/zipball/f6561bf28d520154e4b0ec72be95418abe6d9363",
+                "reference": "f6561bf28d520154e4b0ec72be95418abe6d9363",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Psr\\Http\\Message\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "PHP-FIG",
+                    "homepage": "http://www.php-fig.org/"
+                }
+            ],
+            "description": "Common interface for HTTP messages",
+            "homepage": "https://github.com/php-fig/http-message",
+            "keywords": [
+                "http",
+                "http-message",
+                "psr",
+                "psr-7",
+                "request",
+                "response"
+            ],
+            "time": "2016-08-06T14:39:51+00:00"
         },
         {
             "name": "psr/log",
@@ -1115,16 +1649,16 @@
         },
         {
             "name": "psy/psysh",
-            "version": "v0.9.5",
+            "version": "v0.9.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/bobthecow/psysh.git",
-                "reference": "0951e91ac04ca28cf317f3997a0adfc319e80106"
+                "reference": "4a2ce86f199d51b6e2524214dc06835e872f4fce"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/bobthecow/psysh/zipball/0951e91ac04ca28cf317f3997a0adfc319e80106",
-                "reference": "0951e91ac04ca28cf317f3997a0adfc319e80106",
+                "url": "https://api.github.com/repos/bobthecow/psysh/zipball/4a2ce86f199d51b6e2524214dc06835e872f4fce",
+                "reference": "4a2ce86f199d51b6e2524214dc06835e872f4fce",
                 "shasum": ""
             },
             "require": {
@@ -1183,7 +1717,7 @@
                 "interactive",
                 "shell"
             ],
-            "time": "2018-06-02T16:39:22+00:00"
+            "time": "2018-06-10T17:57:20+00:00"
         },
         {
             "name": "ramsey/uuid",
@@ -2238,6 +2772,48 @@
             "time": "2017-11-27T11:13:29+00:00"
         },
         {
+            "name": "umpirsky/language-list",
+            "version": "v1.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/umpirsky/language-list.git",
+                "reference": "7813f6696559496d014acd5dce0e3b09c0766844"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/umpirsky/language-list/zipball/7813f6696559496d014acd5dce0e3b09c0766844",
+                "reference": "7813f6696559496d014acd5dce0e3b09c0766844",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.4"
+            },
+            "require-dev": {
+                "slowprog/composer-copy-file": "^0.2",
+                "symfony/locale": "^2.7|^3.0",
+                "umpirsky/list-generator": "^1.1"
+            },
+            "type": "library",
+            "extra": {
+                "copy-file": {
+                    "vendor/umpirsky/list-generator/Dockerfile": "./",
+                    "vendor/umpirsky/list-generator/docker-compose.yml": "./"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Saša Stamenković",
+                    "email": "umpirsky@gmail.com"
+                }
+            ],
+            "description": "List of all languages with names and ISO 639-1 codes in all languages and all data formats.",
+            "time": "2018-05-08T16:54:36+00:00"
+        },
+        {
             "name": "vlucas/phpdotenv",
             "version": "v2.4.0",
             "source": {
@@ -2570,16 +3146,16 @@
         },
         {
             "name": "myclabs/deep-copy",
-            "version": "1.8.0",
+            "version": "1.8.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/myclabs/DeepCopy.git",
-                "reference": "478465659fd987669df0bd8a9bf22a8710e5f1b6"
+                "reference": "3e01bdad3e18354c3dce54466b7fbe33a9f9f7f8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/myclabs/DeepCopy/zipball/478465659fd987669df0bd8a9bf22a8710e5f1b6",
-                "reference": "478465659fd987669df0bd8a9bf22a8710e5f1b6",
+                "url": "https://api.github.com/repos/myclabs/DeepCopy/zipball/3e01bdad3e18354c3dce54466b7fbe33a9f9f7f8",
+                "reference": "3e01bdad3e18354c3dce54466b7fbe33a9f9f7f8",
                 "shasum": ""
             },
             "require": {
@@ -2614,20 +3190,20 @@
                 "object",
                 "object graph"
             ],
-            "time": "2018-05-29T17:25:09+00:00"
+            "time": "2018-06-11T23:09:50+00:00"
         },
         {
             "name": "nunomaduro/collision",
-            "version": "v2.0.2",
+            "version": "v2.0.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nunomaduro/collision.git",
-                "reference": "245958b02c6a9edf24627380f368333ac5413a51"
+                "reference": "b1f606399ae77e9479b5597cd1aa3d8ea0078176"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nunomaduro/collision/zipball/245958b02c6a9edf24627380f368333ac5413a51",
-                "reference": "245958b02c6a9edf24627380f368333ac5413a51",
+                "url": "https://api.github.com/repos/nunomaduro/collision/zipball/b1f606399ae77e9479b5597cd1aa3d8ea0078176",
+                "reference": "b1f606399ae77e9479b5597cd1aa3d8ea0078176",
                 "shasum": ""
             },
             "require": {
@@ -2638,7 +3214,8 @@
             },
             "require-dev": {
                 "laravel/framework": "5.6.*",
-                "phpunit/phpunit": "~7.0"
+                "phpstan/phpstan": "^0.9.2",
+                "phpunit/phpunit": "~7.2"
             },
             "type": "library",
             "extra": {
@@ -2676,7 +3253,7 @@
                 "php",
                 "symfony"
             ],
-            "time": "2018-03-21T20:11:24+00:00"
+            "time": "2018-06-16T22:05:52+00:00"
         },
         {
             "name": "phar-io/manifest",
@@ -3060,16 +3637,16 @@
         },
         {
             "name": "phpunit/php-file-iterator",
-            "version": "2.0.0",
+            "version": "2.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/php-file-iterator.git",
-                "reference": "e20525b0c2945c7c317fff95660698cb3d2a53bc"
+                "reference": "cecbc684605bb0cc288828eb5d65d93d5c676d3c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/php-file-iterator/zipball/e20525b0c2945c7c317fff95660698cb3d2a53bc",
-                "reference": "e20525b0c2945c7c317fff95660698cb3d2a53bc",
+                "url": "https://api.github.com/repos/sebastianbergmann/php-file-iterator/zipball/cecbc684605bb0cc288828eb5d65d93d5c676d3c",
+                "reference": "cecbc684605bb0cc288828eb5d65d93d5c676d3c",
                 "shasum": ""
             },
             "require": {
@@ -3103,7 +3680,7 @@
                 "filesystem",
                 "iterator"
             ],
-            "time": "2018-05-28T12:13:49+00:00"
+            "time": "2018-06-11T11:44:00+00:00"
         },
         {
             "name": "phpunit/php-text-template",
@@ -3375,16 +3952,16 @@
         },
         {
             "name": "sebastian/comparator",
-            "version": "3.0.0",
+            "version": "3.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/comparator.git",
-                "reference": "ed5fd2281113729f1ebcc64d101ad66028aeb3d5"
+                "reference": "591a30922f54656695e59b1f39501aec513403da"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/comparator/zipball/ed5fd2281113729f1ebcc64d101ad66028aeb3d5",
-                "reference": "ed5fd2281113729f1ebcc64d101ad66028aeb3d5",
+                "url": "https://api.github.com/repos/sebastianbergmann/comparator/zipball/591a30922f54656695e59b1f39501aec513403da",
+                "reference": "591a30922f54656695e59b1f39501aec513403da",
                 "shasum": ""
             },
             "require": {
@@ -3435,20 +4012,20 @@
                 "compare",
                 "equality"
             ],
-            "time": "2018-04-18T13:33:00+00:00"
+            "time": "2018-06-14T15:05:28+00:00"
         },
         {
             "name": "sebastian/diff",
-            "version": "3.0.0",
+            "version": "3.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/diff.git",
-                "reference": "e09160918c66281713f1c324c1f4c4c3037ba1e8"
+                "reference": "366541b989927187c4ca70490a35615d3fef2dce"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/diff/zipball/e09160918c66281713f1c324c1f4c4c3037ba1e8",
-                "reference": "e09160918c66281713f1c324c1f4c4c3037ba1e8",
+                "url": "https://api.github.com/repos/sebastianbergmann/diff/zipball/366541b989927187c4ca70490a35615d3fef2dce",
+                "reference": "366541b989927187c4ca70490a35615d3fef2dce",
                 "shasum": ""
             },
             "require": {
@@ -3491,7 +4068,7 @@
                 "unidiff",
                 "unified diff"
             ],
-            "time": "2018-02-01T13:45:15+00:00"
+            "time": "2018-06-10T07:54:39+00:00"
         },
         {
             "name": "sebastian/environment",
