@@ -71,6 +71,7 @@
             </div>
         </nav>
         {!! Charts::assets() !!}
+        {{--{!! Charts::styles() !!}--}}
         <main class="py-4">
             @yield('content')
         </main>

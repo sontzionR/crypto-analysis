@@ -2,8 +2,12 @@
 
 namespace App\Console;
 
+use App\Jobs\GetCoinsForDaily;
+use App\Jobs\GetCoinsForTweet;
 use Illuminate\Console\Scheduling\Schedule;
 use Illuminate\Foundation\Console\Kernel as ConsoleKernel;
+use App\Jobs\ProcessDailyScore;
+
 
 class Kernel extends ConsoleKernel
 {
@@ -24,8 +28,17 @@ class Kernel extends ConsoleKernel
      */
     protected function schedule(Schedule $schedule)
     {
-        // $schedule->command('inspire')
-        //          ->hourly();
+//        $schedule->call(function () {
+//            GetTweet::dispatch('btc');
+//        })->everyMinute();
+
+        $schedule->call(function () {
+            GetCoinsForDaily::dispatch();
+        })->dailyAt('21:40');
+
+        $schedule->call(function () {
+            GetCoinsForTweet::dispatch();
+        })->everyThirtyMinutes();
     }
 
     /**

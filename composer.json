@@ -9,6 +9,7 @@
         "antoineaugusti/laravel-sentiment-analysis": "~2.0",
         "consoletvs/charts": "5.*",
         "fideloper/proxy": "^4.0",
+        "google/cloud-language": "^0.15.0",
         "j7mbo/twitter-api-php": "^1.0",
         "laravel/framework": "5.6.*",
         "laravel/tinker": "^1.0"

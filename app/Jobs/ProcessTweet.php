@@ -8,7 +8,10 @@ use Illuminate\Queue\InteractsWithQueue;
 use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Foundation\Bus\Dispatchable;
 use Illuminate\Support\Facades\DB;
-use SentimentAnalysis;
+//use SentimentAnalysis;
+use Google\Cloud\Core\ServiceBuilder;
+
+
 
 class ProcessTweet implements ShouldQueue
 {
@@ -20,10 +23,12 @@ class ProcessTweet implements ShouldQueue
      * @return void
      */
     protected $tweet;
+    protected $coin;
 
-    public function __construct($tweet)
+    public function __construct($tweet,$coin)
     {
         $this->tweet = $tweet;
+        $this->coin = $coin;
     }
 
     /**
@@ -33,21 +38,30 @@ class ProcessTweet implements ShouldQueue
      */
     public function handle()
     {
-        $analysis = new SentimentAnalysis();
-        $analysisResultD = $analysis->decision($this->tweet['text']);
-        $analysisResultS = $analysis->score($this->tweet['text']);
-        print_r($analysisResultD);
-        print_r($analysisResultS);
+        $cloud = new ServiceBuilder([
+            'keyFile' => str_replace("\\n", "\n",config('googleSentiment')),
+            'projectId' => "crypto-analysis-twitter",
+        ]);
+
+        $language = $cloud->language();
+
+        // Detect the sentiment of the text
+        $annotation = $language->analyzeSentiment($this->tweet['text']);
+        $sentiment = $annotation->sentiment();
+
+//        echo 'Sentiment Score: ' . $sentiment['score'] . ', Magnitude: ' . $sentiment['magnitude'];
+//        $analysis = new SentimentAnalysis();
+//        $analysisResultD = $analysis->decision($this->tweet['text']);
+//        $analysisResultS = $analysis->score($this->tweet['text']);
         $date = strtotime($this->tweet['created_at']);
-//        print_r($analysisResult);
-//        print_r($this->tweet);
         DB::table('tweets')->insert(
             [
                 'user_id' => $this->tweet['id'],
                 'dateTime' => $date,
                 'text' => $this->tweet['text'],
-                'scoreA' => $analysisResultS,
-                'coin' => "BTC",
+                //'scoreA' => $analysisResultS,
+                'scoreA' => $sentiment['score'],
+                'coin' => $this->coin,
                 'created_at' => now(),
                 'updated_at' => now(),
             ]

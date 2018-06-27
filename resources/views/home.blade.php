@@ -18,7 +18,15 @@
                 </div>
 
             </div>
-            {!! $chart->render()!!}
+            <br>
+            <div>{!! $chart->render()!!}</div>
+            {{--<div>{!! $chart->html() !!}</div>--}}
+            <br>
+            <div>{!! $chart2->render()!!}</div>
+            <br>
+            <div>{!! $chart3->render()!!}</div>
+            {{--{!! Charts::scripts() !!}--}}
+            {{--//{!! $chart->script() !!}--}}
         </div>
     </div>
 </div>

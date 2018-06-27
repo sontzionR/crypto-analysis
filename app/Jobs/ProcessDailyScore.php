@@ -20,9 +20,11 @@ class ProcessDailyScore implements ShouldQueue
      *
      * @return void
      */
-    public function __construct()
+    protected $coin;
+
+    public function __construct($coin)
     {
-//        $this->coin = $coin;
+        $this->coin = $coin;
 
     }
 
@@ -35,15 +37,16 @@ class ProcessDailyScore implements ShouldQueue
     {
         $totals = DB::table('tweets')
                 ->whereDate('created_at', today())
+                ->where('coin', $this->coin)
                 ->avg('scoreA');
+          //  echo $totals;
 
-      //  foreach ($totals as $total) {
-            echo $totals;
             DB::table('daily_scores')->insert(
                 [
                     'date' => today(),
-                    'coin' => 'BTC',
+                    'coin' => $this->coin,
                     'score' => $totals,
+                    'created_at' => now()
                 ]
             );
 
