@@ -21,9 +21,9 @@ class ChartsDisplayController extends Controller
         $chart = Charts::multi('line', 'highcharts')
             ->title("Crypto Sentiment Analysis")
             ->elementLabel('score')
-            ->labels($daily->unique('created_at')->pluck('created_at'));
+            ->labels($daily->unique('created_at')->sortBy('created_at')->pluck('created_at'));
             foreach ($this->coins as $coin){
-                $chart->dataset($coin, $daily->where('coin', 'like', $coin)->pluck('score'));
+                $chart->dataset($coin, $daily->where('coin', 'like', $coin)->sortBy('created_at')->pluck('score'));
             };
             $chart->responsive(true);
 
