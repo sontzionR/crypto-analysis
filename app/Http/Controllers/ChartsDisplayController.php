@@ -15,7 +15,7 @@ class ChartsDisplayController extends Controller
     {
         $this->coins = config('twitter.coins');
 
-        $daysBack= Carbon::today()->subDays(30);
+        $daysBack= Carbon::today()->subDays(62);
         $daily = DailyScore::whereDate('created_at', '>=', $daysBack)->get();
 
         $chart = Charts::multi('line', 'highcharts')
